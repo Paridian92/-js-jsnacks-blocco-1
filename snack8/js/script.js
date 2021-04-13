@@ -4,13 +4,15 @@ if (numUtente.length != 4){
 }
 
 
-var a = numUtente.split('',4);
+var a = numUtente.split('');
 
 
 console.log( a )
 
+var somma = 0
+
 for(var i = 0; i< a.length; i++){
-  var somma += a[i];
+  somma += parseInt(a[i]);
 }
 console.log(somma)
 
